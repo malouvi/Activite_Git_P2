@@ -1,0 +1,219 @@
+  <!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Le monde des animaux</title>
+    <meta name="description" content="Présentation d'artiste">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css"> 
+
+      /* Styles de base  et changement de police plus un petit marge pour que la bar ne pietine pas les images*/
+	body {
+		background: url('img/fond.jpg') no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		margin-top: 50px;
+	}
+
+      /* Images */
+	img {
+		 width: 100%;
+	}
+	#pictures{
+		padding:0;
+	}
+	  /* Leger modification de couleur plus transparence de 0.5 pour jumbotron*/
+	.jumbotron{
+		background-color:rgba(220,220,238,0.5);
+	}
+	.withmargin{
+		margin-top:50px;
+		margin-bottom:48px;
+	 }
+	   /*Change couleur du caption du carousel et met une petite bordure au texte*/
+	.carousel-caption {
+		color:aqua;
+		text-shadow: 1px 1px 0px black,-1px -1px 0px black,-1px 1px 0px black,1px -1px 0px black;
+
+	 } 
+	   /*Change couleur des indicateurs du carrousel*/
+	.carousel-indicators li{
+		background-color:#4169E1;
+	 }
+	.carousel-indicators .active{
+		background-color:aqua;
+	 }
+	 
+
+	.container{
+		padding-right:48px;
+		padding-left:48px;
+	}
+	  /*Rend transparent le jumbotro du footer*/
+	footer .jumbotron{
+		background-color:rgba(255,255,255,0);
+	}
+
+
+    </style>
+
+  </head>
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar" >
+    <header>
+
+      <!-- Navigation
+      ================================================== -->  
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#page-top" class="navbar-brand">Les monde des animaux</a>
+					
+					
+				</div>
+
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="hidden"><a href="#page-top"></a></li>
+						<li><a href="#accueil">Accueil</a></li>
+						<li><a href="#qui">Nos dernières rondonais</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+    </header>
+
+    <!-- Caroussel
+    ================================================== -->
+	<div class="container">
+	<div class="row">
+	<div class="col-md-offset-3 col-md-6">
+	<div id="pictures" class=" col-md-offset-1 col-md-10">
+     
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+          
+			<ol class="carousel-indicators">
+				<li data-target="#carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel" data-slide-to="1"></li>
+				<li data-target="#carousel" data-slide-to="2"></li>
+				<li data-target="#carousel" data-slide-to="3"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active"><img src="img/archi1.jpg" alt="Architecture"></div>
+				<div class="item "><img src="img/archi2.jpg" alt="Architecture"></div>
+				<div class="item "> <img src="img/archi3.jpg" alt="Architecture"></div>
+				<div class="item "><img src="img/archi4.jpg" alt="Architecture"></div>
+			</div>
+		  <h1 class="carousel-caption">Promenade en nature</h1>
+          <a class="left carousel-control" href="#carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
+	  </div>
+	</div>  
+    </div>
+
+    <!-- Corps de page déjà codé
+    ================================================== -->
+    <div class="container">
+
+      <div class="jumbotron row " id="accueil">
+		<h1 class="text-center withmargin">Qui sommes nous?</h1>
+        <img class="col-sm-12 col-md-5" src="img/accueil.jpg" alt="Accueil">      
+        <p class="col-sm-12 col-md-7">Nous sommes des amoureux de la nature et de la photograpie ....</p>
+      </div>
+
+      <div class="jumbotron row" id="qui">
+        <h1 class="text-center withmargin">Dernières rondonais en nature </h1>
+        <img class="col-sm-12 col-md-5 col-md-push-7" src="img/equipe.jpg" alt="Equipe"> 
+        <p class="col-sm-12 col-md-7 col-md-pull-5">Notre équipe est dinamique, experte et motivée. Nous cherchons des aventureux de la nature pour organiser des sorties photographiques en nature.</p>
+      </div>
+
+      <div class="jumbotron row" id="contact">
+        <h1 class="text-center withmargin">Un message pour nous ?</h1>
+        <form class="row">
+          <div class="form-group col-lg-4">
+            <input type="email" class="form-control" placeholder="Votre email">
+          </div>
+          <div class="form-group col-lg-8">
+            <textarea class="form-control" rows="3" placeholder="Votre message"></textarea>
+          </div>
+          <div class="form-group col-lg-12">
+            <button type="submit" class="btn btn-default pull-right">Envoyer</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Pied de page
+    ================================================== -->
+    <footer class="container">
+		<div class="row text-center jumbotron" >
+			<div class="col-xs-12  " >
+			  <a class="btn btn-default" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+			  <a class="btn btn-default" href="#"><i class="fa fa-facebook fa-2x"></i></a>
+			  <a class="btn btn-default" href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+			  <a class="btn btn-default" href="#"><i class="fa fa-flickr fa-2x"></i></a>
+			  <a class="btn btn-default" href="#"><i class="fa fa-spotify fa-2x"></i></a>
+			</div>
+		</div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Javascript de Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <script>
+      // Scrollspy fluide
+      $(function () {
+        $('header a').on('click', function(e) {
+          e.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(this.hash).offset().top
+          }, 1000, function(){
+            window.location.hash = hash;
+          });
+        });
+      });
+	  //Pour cacher le menu smartphone quand on a fait un choix
+	  $(document).on('click','.navbar-collapse.in',function(e) {
+		if( $(e.target).is('a') ) {
+			$(this).collapse('hide');
+			}
+		});
+    </script>
+
+  </body>
+
+</html>
