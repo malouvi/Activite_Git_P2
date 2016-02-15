@@ -13,3 +13,5 @@ Accueil: Qui sommes nous?
 Nos dernières rondonais
 Contactes: Un message pour nous
 
+Les images viennent du site Pixabay ce sont des free images.
+
